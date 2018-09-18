@@ -1,0 +1,17 @@
+<script>
+	var SSPParams = {
+		"id": "0ee015df8c11f54022eafa11875e9d10",
+		"app": "49",
+		"maxConditions": 10,
+		"default_split_tag": "multiple-payment",
+		"default_share_tag": "share-payment",
+		"pagination_limit": 10,
+		"currency": '{{ shop.currency }}',
+		"customer_email": '{{ customer.email }}',
+		"note": "This order is the part of split order."
+	};
+
+	if (typeof window.upsellParamsDiff != 'undefined') window.upsellParamsDiff.showOn = 'load';
+    else window.upsellParamsDiff = { showOn: 'load' };
+</script>
+<script src="https://s3.amazonaws.com/shopify-apps/split-payments/js/common.js"></script>
